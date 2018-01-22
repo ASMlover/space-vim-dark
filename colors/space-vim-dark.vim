@@ -412,6 +412,10 @@ call s:hi('CurrentWordTwins' , '' , s:bg1 , 'none'      , 'none')
 delf s:hi
 unlet s:color256 s:colors s:bg
 
+hi Comment cterm=italic ctermfg=36 gui=italic guifg=#20af81
+hi String ctermfg=30 guifg=#2aa1ae
+hi SpecialKey ctermfg=239 guifg=#663366
+
 " Must be at the end, because of ctermbg=234 bug.
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
